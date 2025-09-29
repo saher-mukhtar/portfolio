@@ -1,38 +1,28 @@
-// Small JS for form handling and small interactions
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
-function openMail() {
-  window.location.href = "mailto:sahermukhtar7@gmail.com";
-}
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  // optionally store preference
+  localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+});
 
-function submitContact(e) {
-  e.preventDefault();
-  const form = e.target;
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
-
-  if (!name || !email || !message) {
-    showStatus("Please fill all fields.");
-    return;
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme && savedTheme === 'light') {
+    document.body.classList.add('light-mode');
   }
 
-  // Simple mailto fallback (works instantly without server)
-  const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-  const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-  );
-  const mailto = `mailto:sahermukhtar7@gmail.com?subject=${subject}&body=${body}`;
-  window.location.href = mailto;
-
-  showStatus("Opening email client…", true);
-}
-
-function showStatus(text, ok) {
-  const el = document.getElementById("formStatus");
-  el.textContent = text;
-  el.style.color = ok ? "lightgreen" : "#ffb4b4";
-  setTimeout(() => {
-    el.textContent = "";
-  }, 6000);
-}
+  // Observe fade-in sections
+  const faders = document.querySelectorAll('.section, .project-card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  faders.forEach(el => observer.observe(el));
+});
