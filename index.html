@@ -1,382 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Saher Mukhtar — Frontend & WordPress Developer</title>
-    <meta
-      name="description"
-      content="Saher Mukhtar — Frontend & WordPress Developer. HTML/CSS/JS, WordPress, Paperform and form builder specialist."
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <h1>Saher Mukhtar</h1>
-          <p class="muted">Frontend & WordPress Developer</p>
-        </div>
-        <nav class="nav">
-          <a href="#work">Work</a>
-          <a href="#skills">Skills</a>
-          <a href="#about">About</a>
-          <a href="#contact" class="cta">Contact</a>
+    <!-- header -->
+    <div class="container">
+      <video class="back-vid" autoplay loop muted playsinline>
+        <source src="./video/galaxy.mp4" type="video/mp4" />
+      </video>
+      <header class="header">
+        <a href="#" class="logo">
+          <img
+            src="./images/saher's-logo.png"
+            alt="saher mukhtar's logo logo"
+          />
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#About">About </a>
+          <a href="#services">Services</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#testimonials">Testimonial</a>
+          <a href="#contact">Contact</a>
         </nav>
-      </div>
-    </header>
-
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-left">
-            <h2>Clean, fast, and user-centered websites & forms</h2>
-            <p class="lead">
-              I'm a Front-End & WordPress developer with 3+ years experience
-              building responsive websites and high-converting forms using
-              Paperform, JotForm, Typeform and WordPress (Elementor, ACF).
-            </p>
-            <div class="hero-ctas">
-              <a class="btn primary" href="#work">View My Work</a>
-              <a
-                class="btn outline"
-                href="resume.pdf"
-                target="_blank"
-                rel="noopener"
-                >Download CV</a
-              >
-            </div>
-
-            <ul class="contact-mini">
-              <li>
-                📧
-                <a href="mailto:sahermukhtar7@gmail.com"
-                  >sahermukhtar7@gmail.com</a
-                >
-              </li>
-              <li>📞 <a href="tel:+923180448916">0318 0448916</a></li>
-              <li>
-                🔗
-                <a
-                  href="https://www.linkedin.com/in/saher-mukhtar-a39991236/"
-                  target="_blank"
-                  rel="noopener"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
+      </header>
+      <!-- home section-->
+      <section class="home" id="home">
+        <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Saher Mukhtar</h1>
+          <h3>And I'm a <span class="multiple-text"></span></h3>
+          <p>
+            Creative Frontend and WordPress Developer with 3+ years of
+            experience in building responsive and user-friendly websites.
+            Skilled in turning ideas into functional, high-performance digital
+            experiences with clean design and smooth user interaction.
+          </p>
+          <p><br /></p>
+          <div class="social-media">
+            <a href="tel:0318-0448916" target="_blank"
+              ><i class="bx bxs-phone"></i
+            ></a>
+            <a href="mailto:sahermukhtar7@gmail.com" target="_blank"
+              ><i class="bx bxs-envelope"></i
+            ></a>
+            <a href="https://github.com/saher-mukhtar" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
-
-          <div class="hero-right">
-            <div class="card profile-card">
-              <div class="avatar">SM</div>
-              <h3>Saher Mukhtar</h3>
-              <p class="muted">WP & Frontend Developer</p>
-
-              <div class="skill-pill-list">
-                <span>HTML</span><span>CSS3</span><span>JS</span>
-                <span>Tailwind</span><span>WordPress</span
-                ><span>Paperform</span>
-              </div>
-
-              <a class="btn full" href="#contact">Hire me</a>
-            </div>
-          </div>
+          <a href="#Portfolio" class="btn">See My Projects</a>
+        </div>
+        <div class="home-image">
+          <img src="./images/saher's-image.png" alt="saher's picture" />
         </div>
       </section>
-
-      <!-- Work -->
-      <section id="work" class="section">
-        <div class="container">
-          <div class="section-head">
-            <h3>Selected Projects</h3>
-            <p class="muted">
-              Live forms, booking systems and WordPress sites — optimized for UX
-              and conversions.
-            </p>
-          </div>
-
-          <div class="projects-grid">
-            <!-- Project cards: edit links & descriptions as needed -->
-            <article class="project">
-              <h4>Learn More! — Paperform</h4>
-              <p class="muted">
-                Informational / engagement page built with Paperform.
-              </p>
-              <a
-                class="link"
-                href="https://ng3qd16c.paperform.co/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>Work for Yourself / Business Wellness</h4>
-              <p class="muted">
-                Form to support entrepreneurs and wellness check-ins.
-              </p>
-              <a
-                class="link"
-                href="https://fembizz.paperform.co/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>Discovery Questionnaire</h4>
-              <p class="muted">
-                Client intake with multiple question types and logic.
-              </p>
-              <a
-                class="link"
-                href="https://h0ymdhnl.paperform.co/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>REN Booking Form</h4>
-              <p class="muted">Appointment booking built on Paperform.</p>
-              <a
-                class="link"
-                href="https://mh5lnpmr.paperform.co/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>Lead Gen — Happy Heart</h4>
-              <p class="muted">
-                Lead generation form optimized for conversions.
-              </p>
-              <a
-                class="link"
-                href="https://happy-heart.paperform.co/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>Provider Solidarity Consultation</h4>
-              <p class="muted">
-                Consultation request form for community support.
-              </p>
-              <a
-                class="link"
-                href="https://khkvh8cq.paperform.co/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>Military Realtors — Embedded Form</h4>
-              <p class="muted">
-                Paperform embedded into a WordPress site (integration example).
-              </p>
-              <a
-                class="link"
-                href="https://herosold.com/military-realtors-near-luke-afb"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-
-            <article class="project">
-              <h4>Desol Int. — WordPress</h4>
-              <p class="muted">
-                WordPress site work including theme tweaks and performance
-                improvements.
-              </p>
-              <a
-                class="link"
-                href="http://desolint.com/"
-                target="_blank"
-                rel="noopener"
-                >Open live</a
-              >
-            </article>
-          </div>
+      <!-- About section -->
+      <section class="About" id="About">
+        <div class="about-video">
+          <video autoplay loop muted playsinline class="hero-video">
+            <source src="video/hero-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="about-content">
+          <h2 class="heading">About<span> Me!</span></h2>
+          <h3>“Building Modern Websites That Perform and Inspire.”</h3>
+          <p>
+            I am a passionate Web Developer specializing in Front-end and
+            WordPress development. I create fast, responsive, and user-focused
+            websites that blend clean code with modern design. With expertise in
+            UI/UX design, website redesign, and performance optimization, I aim
+            to deliver seamless digital experiences that engage users and
+            elevate brands.
+            <span id="more-text">
+              I focus on developing functional, visually appealing, and scalable
+              web solutions that align with business goals. Dedicated to
+              continuous learning and innovation, I transform ideas into
+              impactful online experiences that leave a lasting impression.
+            </span>
+          </p>
+          <button id="read-more-btn">Read More</button>
         </div>
       </section>
-
-      <!-- Skills -->
-      <section id="skills" class="section alt">
-        <div class="container">
-          <div class="section-head">
-            <h3>Skills & Tools</h3>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill">
-              <h4>Frontend</h4>
-              <p class="muted">HTML5, CSS3, JavaScript, jQuery, SASS</p>
-            </div>
-            <div class="skill">
-              <h4>WordPress</h4>
-              <p class="muted">Elementor, ACF, Custom Themes, WooCommerce</p>
-            </div>
-            <div class="skill">
-              <h4>Form Builders</h4>
-              <p class="muted">Paperform, JotForm, Typeform, Gravity Forms</p>
-            </div>
-            <div class="skill">
-              <h4>Performance & SEO</h4>
-              <p class="muted">Caching, Lighthouse, Responsive optimization</p>
-            </div>
-            <div class="skill">
-              <h4>Design</h4>
-              <p class="muted">Figma, Photoshop, Canva</p>
-            </div>
-            <div class="skill">
-              <h4>Other</h4>
-              <p class="muted">Firebase, Java, Python (basics)</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section">
-        <div class="container about-inner">
-          <div>
-            <h3>About me</h3>
+      <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+          <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Development</h3>
             <p>
-              I’m a Front-End & WordPress developer with 3+ years of experience
-              building responsive, user-focused websites and forms. I build
-              clean UI, ensure fast performance and deliver forms that convert —
-              from discovery questionnaires to booking & lead gen systems.
+              I specialize in front-end web development, crafting responsive and
+              user-friendly interfaces with HTML, CSS, and JavaScript.
+              <span class="more-text">
+                I transform ideas into interactive websites that are visually
+                appealing and highly functional.My work blends creativity and
+                precision to deliver seamless user experiences.</span
+              >
             </p>
-
-            <ul class="about-list">
-              <li>
-                <strong>Education:</strong> B.S. in Software Engineering —
-                Virtual University of Pakistan (2019–2023)
-              </li>
-              <li>
-                <strong>Achievement:</strong> Certificate of Appreciation — Best
-                Employee
-              </li>
-              <li><strong>Languages:</strong> English, Urdu</li>
-            </ul>
-
-            <a class="btn" href="resume.pdf" target="_blank" rel="noopener"
-              >View full CV (PDF)</a
-            >
+            <button class="read-more-btn">Read More</button>
           </div>
 
-          <div class="fun-fact">
-            <h4>Quick facts</h4>
-            <p class="muted">
-              I enjoy building forms that feel like websites — visually
-              appealing, fast and mobile-first.
+          <div class="services-box">
+            <i class="bx bxl-wordpress"></i>
+            <h3>WordPress Development</h3>
+            <p>
+              Full-Stack WordPress developer creating dynamic, responsive
+              websites with custom themes and plugins.
+              <span class="more-text">
+                I focus on seamless functionality, intuitive user experience,
+                and clean design integration. My work ensures professional,
+                easy-to-manage, visually appealing, and high-performance
+                websites.</span
+              >
             </p>
+            <button class="read-more-btn">Read More</button>
+          </div>
+
+          <div class="services-box">
+            <i class="bx bxs-layout"></i>
+            <h3>Website Redesign Expert</h3>
+            <p>
+              I create impactful website redesigns that significantly enhance a
+              brand’s online presence and overall user experience.
+              <span class="more-text">
+                I design modern, intuitive layouts that are visually appealing,
+                highly functional, and user-friendly across all devices. My
+                websites not only look great but also engage visitors and
+                effectively achieve business goals.</span
+              >
+            </p>
+            <button class="read-more-btn">Read More</button>
           </div>
         </div>
       </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section contact-section">
-        <div class="container">
-          <div class="contact-grid">
-            <div>
-              <h3>Contact</h3>
-              <p class="muted">
-                Interested in collaborating? Send a message or schedule a call.
+      <!-- portfolio section design -->
+      <section class="Portfolio" id="Portfolio">
+        <h2 class="heading">Latest<span> Project </span></h2>
+        <div class="Portfolio-container">
+          <div class="Portfolio-box">
+            <img src="./images/WORDPRESS.png" alt="wordperss website" />
+            <div class="portfolio-layer">
+              <h4>Wordpress Website</h4>
+              <p>
+                “Educational resources” sounds smoother and more specific than
+                just “resources.”
               </p>
-
-              <ul class="contact-list">
-                <li>
-                  📧
-                  <a href="mailto:sahermukhtar7@gmail.com"
-                    >sahermukhtar7@gmail.com</a
-                  >
-                </li>
-                <li>📞 <a href="tel:+923180448916">0318 0448916</a></li>
-                <li>
-                  🔗
-                  <a
-                    href="https://www.linkedin.com/in/saher-mukhtar-a39991236/"
-                    target="_blank"
-                    rel="noopener"
-                    >LinkedIn</a
-                  >
-                </li>
-              </ul>
+              <a class="#" href="https://studyassist.com.pk/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
+          </div>
 
-            <form
-              id="contactForm"
-              class="contact-form"
-              onsubmit="submitContact(event)"
-            >
-              <label>
-                <span>Name</span>
-                <input
-                  required
-                  name="name"
-                  type="text"
-                  placeholder="Your name"
-                />
-              </label>
+          <div class="Portfolio-box">
+            <img src="./images/re.webp" alt="website redesign" />
+            <div class="portfolio-layer">
+              <h4>Website redesign</h4>
+              <p>
+                “Your vision, your website.We design exactly the way you imagine
+                it.”
+              </p>
+            </div>
+          </div>
+          <div class="Portfolio-box">
+            <img src="./images/airshipmart.png" alt="Airship Mart Website" />
+            <div class="portfolio-layer">
+              <h4>WordPress Development</h4>
+              <p>
+                E-commerce store built using WordPress + Elementor for a modern
+                retail experience.
+              </p>
+              <a href="https://airshipmart.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-              <label>
-                <span>Email</span>
-                <input
-                  required
-                  name="email"
-                  type="email"
-                  placeholder="you@domain.com"
-                />
-              </label>
+          <div class="Portfolio-box">
+            <img src="./images/statelight.png" alt="StateShift Blog" />
+            <div class="portfolio-layer">
+              <h4>Blog Website</h4>
+              <p>
+                Technology blog with a clean content layout and optimized SEO
+                structure.
+              </p>
+              <a href="https://blog.stateshift.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-              <label>
-                <span>Message</span>
-                <textarea
-                  required
-                  name="message"
-                  rows="4"
-                  placeholder="Short message..."
-                ></textarea>
-              </label>
+          <div class="Portfolio-box">
+            <img
+              src="./images/heatingandcateringparts.png"
+              alt="Heating and Catering Parts"
+            />
+            <div class="portfolio-layer">
+              <h4>WooCommerce Website</h4>
+              <p>
+                Custom WooCommerce site with optimized product filtering and SEO
+                enhancements.
+              </p>
+              <a href="https://www.heatingandcateringparts.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-              <div class="form-actions">
-                <button type="submit" class="btn primary">Send message</button>
-                <button type="button" class="btn outline" onclick="openMail()">
-                  Email me
-                </button>
-              </div>
+          <div class="Portfolio-box">
+            <img src="./images/jevglam.png" alt="JEV Glam Website" />
+            <div class="portfolio-layer">
+              <h4>Fashion eCommerce</h4>
+              <p>
+                Fashion eCommerce site built using Divi + Elementor with a
+                stylish UI.
+              </p>
+              <a href="https://jevglam.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
 
-              <p id="formStatus" class="muted" aria-live="polite"></p>
-            </form>
+          <div class="Portfolio-box">
+            <img src="./images/bougiebatch.png" alt="Bougiebatch Website" />
+            <div class="portfolio-layer">
+              <h4>WooCommerce Store</h4>
+              <p>
+                WooCommerce-powered bakery shop with elegant branding and smooth
+                checkout flow.
+              </p>
+              <a href="https://bougiebatch.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img
+              src="./images/titanmedicalsupplies.png"
+              alt="Titan Medical Supplies"
+            />
+            <div class="portfolio-layer">
+              <h4>Medical Supplies Website</h4>
+              <p>
+                Professional medical supplies website optimized for SEO and
+                performance.
+              </p>
+              <a href="https://www.titanmedicalsupplies.co.uk/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img
+              src="./images/staging.alhamidfoundation.png"
+              alt="Al Hamid Foundation"
+            />
+            <div class="portfolio-layer">
+              <h4>Charity Platform</h4>
+              <p>
+                Charity and donation platform built with Elementor and strong
+                visual hierarchy.
+              </p>
+              <a href="https://staging.alhamidfoundation.org/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img src="./images/altarepatners.png" alt="Altare Partners" />
+            <div class="portfolio-layer">
+              <h4>Corporate Website</h4>
+              <p>
+                Corporate consulting site with modern Elementor layout and
+                animations.
+              </p>
+              <a href="https://altarepartners.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img src="./images/brettonabees.png" alt="Brettonabees Website" />
+            <div class="portfolio-layer">
+              <h4>WooCommerce Website</h4>
+              <p>
+                Local honey brand site with WooCommerce integration and
+                minimalist design.
+              </p>
+              <a href="https://brettonabees.co.uk/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img src="./images/circostam.png" alt="Circosta Metals Website" />
+            <div class="portfolio-layer">
+              <h4>Industrial Website</h4>
+              <p>
+                Industrial website built for a metal fabrication company with
+                Elementor.
+              </p>
+              <a href="https://www.circostametals.com/staging/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img src="./images/hollyweedlight.png" alt="K9Q Pet Store" />
+            <div class="portfolio-layer">
+              <h4>WooCommerce Store</h4>
+              <p>
+                Pet accessories WooCommerce store with playful, responsive
+                layout.
+              </p>
+              <a href="https://k9q.549.myftpupload.com/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            <img src="./images/hatchcleaning.png" alt="Hatch Cleaning" />
+            <div class="portfolio-layer">
+              <h4>Service Website</h4>
+              <p>
+                Cleaning service WordPress site built with Elementor for
+                conversions.
+              </p>
+              <a
+                href="https://hatchcleaning.wpenginepowered.com/"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="Portfolio-box">
+            updating
+            <img src="./images/mdcrimevictims.png" alt="MCVCR Website" />
+            <div class="portfolio-layer">
+              <h4>Optimization Project</h4>
+              <p>
+                Maryland Crime Victims Resource Center INC optimization project.
+              </p>
+              <a href="https://www.mdcrimevictims.org/" target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>
-    </main>
+      <!-- Testimonials Section -->
+      <section class="testimonials" id="testimonials">
+        <h2 class="section-title">What <span>Clients</span> Say</h2>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          © <span id="year"></span> Saher Mukhtar — Frontend & WordPress
-          Developer
-        </p>
-      </div>
-    </footer>
+        <div class="testimonial-container">
+          <div class="testimonial-card active">
+            <img src="./images/pfp_1.webp" alt="Client 1" />
+            <h3>Sarah Khan</h3>
+            <p>
+              "Amazing work! The design exceeded my expectations and the
+              communication was excellent. Highly recommend!"
+            </p>
+          </div>
 
+          <div class="testimonial-card">
+            <img src="./images/2.jpg" alt="Client 2" />
+            <h3>Leo William</h3>
+            <p>
+              "Professional and creative! Delivered on time and brought my
+              vision to life perfectly."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="./images/3.jpg" alt="Client 3" />
+            <h3>Elsa</h3>
+            <p>
+              "Incredible attention to detail and very responsive. I loved
+              working together on this project!"
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="./images/4.jpg" alt="Client 4" />
+            <h3>Elie Malic</h3>
+            <p>
+              "Amazing experience! Extremely professional, detail-oriented, and
+              quick to respond. The final outcome exceeded my expectations!"
+            </p>
+          </div>
+
+          <!-- Navigation buttons -->
+          <button class="testimonial-prev">
+            <i class="bx bx-chevron-left"></i>
+          </button>
+          <button class="testimonial-next">
+            <i class="bx bx-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Contact section design -->
+      <section class="contact" id="contact">
+        <div class="container2">
+          <h2 class="heading">Contact<span> Me!</span></h2>
+          <form id="contactForm">
+            <div class="input-box">
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Email Address" required />
+            </div>
+            <div class="input-box">
+              <input type="number" placeholder="Mobile Number" />
+              <input type="text" placeholder="Email Subject" />
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn" />
+          </form>
+          <div id="message">✅ Message sent!</div>
+        </div>
+      </section>
+
+      <!-- footer design -->
+      <footer class="footer">
+        <div class="footer-text">
+          <p>&copy;2025 Saher Mukhtar | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- JS link -->
     <script src="script.js"></script>
   </body>
 </html>
